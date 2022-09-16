@@ -1,0 +1,78 @@
+.mySlides, .mySlidesb, .mySlidesc, .mySlidesd, .mySlidesee, .mySlidesDa, .mySlidesDb, .mySlidesDc, .mySlidesDd, .mySlidesDe {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: 99;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot, .dotb, .dotc, .dotd, .dote, .dotf, .dotDa, .dotDb, .dotDc, .dotDd, .dotDe {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover, .dotb:hover, .dotc:hover, .dotd:hover, .dote:hover, .dotf:hover, .dotDa:hover, .dotDb:hover, .dotDc:hover, .dotDd:hover, .dotDe:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.galleryimage {
+    width: 1rem;
+}
+
+/* Desktop version */
+
+.sc-desk {
+  width: 40em;
+}
